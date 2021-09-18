@@ -6,7 +6,7 @@ var score = 0;
 function play(question, answer)
 {
   var userAns = readLineSync.question(question);
-  if(userAns === answer)
+  if(userAns.toLowerCase() === answer.toLowerCase())
   {
     console.log("Right!");
     score = score + 1;
